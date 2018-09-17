@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="RigthemarketPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>model.Registeration</class>
+    <class>model.Login</class>
+    <class>model.VirualMoney</class>
+    <class>model.VSMShareDetail</class>
+    <class>model.Myshares</class>
+    <class>model.Sellshares</class>
+    <class>model.MyHistory</class>
+    <class>model.Buyshares</class>
+    <class>model.Watchlist</class>
+    <class>model.SetPointer</class>
+    <class>model.Notification</class>
+    <class>model.VirtualMoney</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=Rigthemarket"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="icreate"/>
+    </properties>
+  </persistence-unit>
+</persistence>
